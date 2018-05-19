@@ -1,0 +1,26 @@
+<!--<body>-->
+<!--<div class="text-center">-->
+<form class="form-signin" (ngSubmit)="f.form.valid && sigup()" #f="ngForm" novalidate>
+  <img class="mb-4" src="./assets/img/d.ico" alt="" width="72" height="72">
+  <h1 class="h3 mb-3 font-weight-normal">Please fill in this form to create an account</h1>
+  <label for="inputEmailSignUp" class="sr-only">Email address</label>
+  <input type="email" id="inputEmailSignUp" class="form-control" placeholder="Email address" name="usernameS" />
+  <label for="inputPasswordSignUp" class="sr-only">Password</label>
+  <input type="password" id="inputPasswordSignUp" class="form-control" placeholder="Password" name="passwordS" />
+
+  <a class="btn btn-social-icon btn-lg btn-twitter" href="/login/twitter" ><i class="fa fa-twitter"></i></a>
+  <a class="btn btn-social-icon btn-lg btn-dropbox" href = "/login/dropbox"><i class="fa fa-dropbox"></i></a>
+  <a class="btn btn-social-icon btn-lg btn-facebook" href="/login/facebook"><i class="fa fa-facebook"></i></a>
+  <a class="btn btn-social-icon btn-lg btn-github" href="/login/github"><i class="fa fa-github"></i></a>
+
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+  <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+  <div class="s-login-pg-foot">
+    <div *ngIf="errMsg" style="color:indianred; font-weight: bold">{{errMsg}}</div>
+  </div>
+</form>

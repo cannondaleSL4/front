@@ -1,0 +1,5 @@
+.modal-backdrop {
+  /* bug fix - no overlay */
+  /* bootstramp has this bug*/
+  display: none;
+}

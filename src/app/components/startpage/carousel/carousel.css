@@ -1,0 +1,14 @@
+.carousel-inner {
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+
+img {
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: auto;
+}

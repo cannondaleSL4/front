@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <table class="table table-fixed">
+        <thead>
+        <tr class="d-flex">
+          <th class="col-1" scope="col">#</th>
+          <th class="col-3" scope="col">Quote</th>
+          <th class="col-3" scope="col">Price</th>
+          <th class="col-3" scope="col">Day Δ diff</th>
+        </tr>
+        </thead>
+        <tbody class="points_table_scrollbar">
+        <tr class="d-flex" *ngFor="let live of _livequotesArray; let i = index">
+          <td class="col-1">{{i+1}} {{item}}</td>
+          <td class="col-3">{{live.name}}</td>
+          <td class="col-3">{{live.price}}</td>
+          <td class="col-3">@twitter</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
